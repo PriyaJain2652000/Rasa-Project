@@ -1,0 +1,183 @@
+version: "2.0"
+
+nlu:
+- intent: greet
+  examples: |
+    - hey
+    - hello
+    - hi
+    - hello there
+    - good morning
+    - good evening
+    - moin
+    - hey there
+    - let's go
+    - hey dude
+    - goodmorning
+    - goodevening
+    - good afternoon
+
+- intent: goodbye
+  examples: |
+    - good afternoon
+    - cu
+    - good by
+    - cee you later
+    - good night
+    - bye
+    - goodbye
+    - have a nice day
+    - see you around
+    - bye bye
+    - see you later
+
+- intent: affirm
+  examples: |
+    - yes
+    - y
+    - indeed
+    - of course
+    - that sounds good
+    - correct
+    - thanks
+    - thank you
+    - ok
+    - okay
+
+- intent: deny
+  examples: |
+    - no
+    - n
+    - never
+    - I don't think so
+    - don't like that
+    - no way
+    - not really
+
+- intent: bot_challenge
+  examples: |
+    - are you a bot?
+    - are you a human?
+    - am I talking to a bot?
+    - am I talking to a human?
+
+- intent: network_hospital
+  examples: |
+    - I am looking for a hospital
+    - I am looking for a hospital near me
+    - I am looking for a hospital in my area
+    - I am looking for a nearby hospital
+    - any nearby hospital?
+    - I need a hospital urgently
+    - hospital urgently required
+
+- intent: insurer
+  examples: |
+    - What's the insurer name?
+    - Who's the insurer?
+    - Insurer?
+    - Insurer name?
+    - about insurer 
+
+- intent: login
+  examples: |
+    - login
+    - login?
+    - What are the login details?
+    - login details?
+    - I need help with login
+
+- intent: contact_details
+  examples: |
+    - How to contact
+    - Please provide contact details
+    - contact details
+    - I need contact details
+
+- intent: query
+  examples: |
+    - I need help for hospitalization
+    - I need help regarding hospitalization
+    - Need more help for hospitalization
+    - Did not help
+    - Help me out regarding hospitalization
+    - Please help for hospitalization
+
+- intent: oconc
+  examples: |
+    - I want an oxgyen concentrator
+    - I need an oxgyen concentrator
+    - I need an o2c
+    - I need to request an oxgyen concentrator
+    - I need to raise a request for an oxgyen concentrator
+    - Is O2C available?
+    - Is oxgyen concentrator available?
+    - o2c
+    - oxgyen concentrator
+    - oxgyen
+    - Can I get an o2c?
+    - Can I get an oxgyen concentrator?
+
+- intent: eligibility
+  examples: |
+    - Who are eligible for o2c
+    - Who are eligible for oxgyen concentrator
+    - Eligibility criteria for o2c
+    - Eligibility criteria for oxgyen concentrator
+
+- intent: locations
+  examples: |
+    - Where can the o2c be delivered?
+    - Where can the oxgyen concentrator be delivered?
+    - Where can the o2c be available?
+    - Where can the oxgyen concentrator be available?
+    - What are the locations for o2c?
+    - What are the locations for oxgyen concentrator?
+    - locations
+    - places
+    - cities
+
+- intent: payment
+  examples: |
+    - How much do I need to pay for o2c?
+    - How much money do I need to pay for o2c?
+    - How much money do I need to pay for oxgyen concentrator?
+    - Do I need to pay?
+    - Do I need to pay anything?
+    - Payment?
+    - Fees?
+    - What is the fees for o2c?
+    - What is the fees for oxgyen concentrator?
+
+- intent: return
+  examples: |
+    - How to return o2c
+    - How to return oxgyen concentrator
+    - How can I return o2c?
+    - How can I return oxgyen concentrator?
+    - I want to return o2c
+    - I want to return oxgyen concentrator
+    - When do I need to return o2c?
+    - When do I need to return oxgyen concentrator?
+    - return o2c
+    - return oxgyen concentrator
+
+- intent: extension
+  examples: |
+    - How can I extend time for o2c?
+    - How can I extend time for oxgyen concentrator?
+    - I want to extend time of o2c
+    - I want to extend time of oxgyen concentrator
+    - extend time for o2c
+    - extend time for oxgyen concentrator
+    - I want to increase time for o2c
+    - I want o2c for more days
+    - I want o2c for more time
+
+- intent: more_queries
+  examples: |
+    - Help for o2c
+    - Help for oxgyen concentrator
+    - More help for o2c
+    - Need more help regarding o2c
+    - I have more queries regarding o2c

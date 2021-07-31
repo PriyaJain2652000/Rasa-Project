@@ -1,0 +1,100 @@
+version: "2.0"
+
+intents:
+  - greet
+  - goodbye
+  - affirm
+  - deny
+  - network_hospital
+  - insurer
+  - login
+  - contact_details
+  - query
+  - oconc
+  - eligibility
+  - locations
+  - payment
+  - return
+  - extension
+  - more_queries
+  - bot_challenge
+
+responses:
+  utter_greet:
+    - text: "Hey, good day! How may I help you?"
+
+  utter_did_that_help:
+    - text: "Did that help you?"
+
+  utter_goodbye:
+    - text: "Bye, have a great day, ahead!"
+
+  utter_glad:
+    - text: "Glad it helped!"
+
+  utter_network_hospital:
+    - text: "To locate network hospitals, please visit:\nhttps://www.medibuddy.in/networkHospitals \nand search for your location
+            \nMake sure to select Insurer name as: National Insurance Co. Ltd"
+            
+  utter_insurer:
+    - text: "Insurer Name: National Insurance Co. Ltd"
+
+  utter_login:
+    - text: "Please login to URL: https://portal.medibuddy.in/Home.aspx
+        \nUsername: <Employee_code>@dell\n(for example: if your emp code is 1234 your username is 1234@dell)
+        \nPassword: DDMMYYYY (employee's date of birth)"
+
+  utter_details:
+    - text: "Call: 04071325024\nMail: dell@mediassist.in
+
+        For additional detail, visit: https://inside.dell.com/community/active/india-advisory-covid-19/pages/overview"
+
+  utter_raise:
+    - text: "Please visit this link to place your request. : 
+            \nhttps://dellcovidhelpline.apis.dell.com/covidhelp 
+            \nYou will need to enter your 
+            \n  1. Badge id
+            \n  2. Name
+            \n  3. Contact number
+            \n  4. Alternate contact number
+            \n  5. Delivery location
+            \n  6. And a doctor's prescription that clearly mentions the requirement of O2C for the patient’s use at home."
+
+  utter_eligibility:
+    - text: "The oxgyen concentrator facility is available for Dell India team members and their immediate family 
+            \n(Spouse/Partner, Children, Mother, Father, Mother-in-law and Father-in-law)
+            \nto help support emergency home oxygen requirements.
+            \nIf required, team members can also request oxygen concentrators for their siblings and grandparents at the moment. 
+            \nHowever, please note that priority is being provided to immediate family members as defined above."
+  
+  utter_locations:
+    - text: "The O2Cs are available across all major Dell office locations in India:
+             \nBangalore, Gurgaon, Hyderabad, Chennai, Pune, Mumbai, and Kolkata"
+
+  utter_payment:
+    - text: "You don't need to pay to use the O2C
+            \nThis is a Dell asset that can be borrowed by you/your immediate family on the advice of a doctor, 
+            \nto be used in case of an emergency requirement of Oxygen at home due to COVID-19. 
+            \nIn case of any damage to the machine while in the team member’s care,
+            \nthe team member will be responsible for repairs/ replacement of the machine."
+
+  utter_return:
+    - text: "The Facilities team will reach out to team members on the 6th day to process the return of Oxygen Concentrators
+            \nUpon return, the machines will be sterilized and ready for reuse within 48 hours"
+
+  utter_extension:
+    - text: "On the 6th Day from the delivery of the O2C you will receive email/SMS return notification which will give you an option to extend for another 7 days."
+
+  utter_more_queries:
+    - text: "If your query is not resolved, 
+            \nread FAQ: https://inside.dell.com/docs/DOC-502732
+            \nor
+            \nPlease email any queries and suggestions to 
+            \nIndia_Covid19_Suggestion@dell.com and mention Oxygen Concentrator in the subject."
+
+  utter_iamabot:
+    - text: "I am a bot, powered by Rasa."
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
